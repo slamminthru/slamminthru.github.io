@@ -1,0 +1,202 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,600);
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: "social-font";
+  src:url("fonts/social-font.eot");
+  src:url("fonts/social-font.eot?#iefix") format("embedded-opentype"),
+    url("fonts/social-font.woff") format("woff"),
+    url("fonts/social-font.ttf") format("truetype"),
+    url("fonts/social-font.svg#social-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "social-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "social-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bc:before {
+  content: "b";
+}
+.icon-tw:before {
+  content: "t";
+}
+.icon-fb:before {
+  content: "f";
+}
+.icon-em:before {
+  content: "e";
+}
+.icon-ar:before {
+  content: "a";
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+a {
+  color: #ccc;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: color 250ms linear;
+  -moz-transition: color 250ms linear;
+  -ms-transition: color 250ms linear;
+  -o-transition: color 250ms linear;
+  transition: color 250ms linear;
+}
+
+a:active {
+  color: #fff;
+}
+
+.jumbotron {
+  background-color: transparent;
+}
+
+#cabecera {
+  padding: 0px 0px 24px 0px;
+}
+
+h1 {
+
+}
+
+img#logo {
+  width: 100%;
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0 none;
+}
+
+.social {
+  float: right;
+  padding: 12px 0px 0px 0px;
+}
+
+.social a {
+  color: #fff;
+  font-size: 36px;
+  padding-left: 10px;
+}
+
+.social a:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.social.center {
+  float: none;
+  text-align: center;
+}
+
+#menu {
+  padding: 0px 0px 24px 0px;
+}
+
+#menu a {
+  font-size: 24px;
+  color: #fff;
+  background-color: transparent;
+  outline: 0 none;
+}
+
+#menu a:hover {
+  color: #ccc;
+  background-color: transparent;
+}
+
+#menu a:active {
+  color: #ccc;
+  background-color: transparent;
+}
+
+.contenido {
+  height: 1024px;
+  padding: 0px 0px 0px 0px;
+}
+
+img.bg {
+  z-index: -1;
+  opacity: 0.6;
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  
+  /* Set up proportionate scaling */
+  width: auto;
+  height: auto;
+  
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+#subir {
+  width: 100%;
+  text-align: right;
+  position: fixed;
+  bottom: 24px;
+  right: 0px;
+  padding: 0px 24px 0px 0px;
+}
+
+#subir a {
+  display: none;
+  font-size: 400%;
+  color: #fff;
+  outline: 0 none;
+  opacity: 1.0;
+  text-decoration: none;
+}
+
+#subir a:hover {
+  color: #fff;
+  text-decoration: none;
+  opacity: 1.0;
+}
+
+#subir a:active {
+  color: #fff;
+  text-decoration: none;
+}
